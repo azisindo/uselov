@@ -1,0 +1,853 @@
+object frm_template: Tfrm_template
+  Left = 3130
+  Height = 895
+  Top = 38
+  Width = 1511
+  Caption = 'Frm Ver. 9.9'
+  ClientHeight = 895
+  ClientWidth = 1511
+  DesignTimePPI = 144
+  OnShow = FormShow
+  WindowState = wsMaximized
+  object pnl_top: TPanel
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 1511
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'FORMS PERMINTAAN BARANG'
+    ClientHeight = 40
+    ClientWidth = 1511
+    Color = 9062956
+    Font.Color = clMenuBar
+    Font.Height = -24
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object pnl_time: TPanel
+      Left = 0
+      Height = 40
+      Top = 0
+      Width = 244
+      Align = alLeft
+      BevelOuter = bvNone
+      Caption = '09 July 2023 9:48 AM'
+      Font.Color = clWhite
+      Font.Height = -18
+      Font.Name = 'Roboto'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+  object pnl_head: TPanel
+    Left = 0
+    Height = 136
+    Top = 40
+    Width = 1511
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 136
+    ClientWidth = 1511
+    TabOrder = 1
+    object pnl_ship_to: TPanel
+      Left = 0
+      Height = 136
+      Top = 0
+      Width = 607
+      Align = alLeft
+      BevelOuter = bvNone
+      ClientHeight = 136
+      ClientWidth = 607
+      Font.Height = -18
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      object store_id: TLabel
+        Left = 8
+        Height = 22
+        Top = 32
+        Width = 84
+        Caption = 'Kode Toko'
+        Font.Height = -18
+        Font.Name = 'Roboto'
+        ParentColor = False
+        ParentFont = False
+      end
+      object ed_store_id: TEdit
+        Left = 98
+        Height = 33
+        Top = 24
+        Width = 120
+        OnKeyDown = ed_store_idKeyDown
+        TabOrder = 0
+      end
+      object ed_store_name: TEdit
+        Left = 224
+        Height = 33
+        Top = 24
+        Width = 375
+        Font.Height = -18
+        OnKeyDown = ed_store_idKeyDown
+        ParentFont = False
+        TabOrder = 1
+      end
+      object lbl_serial_no: TLabel
+        Left = 8
+        Height = 22
+        Top = 77
+        Width = 61
+        Caption = 'No Urut'
+        Font.Height = -18
+        Font.Name = 'Roboto'
+        ParentColor = False
+        ParentFont = False
+      end
+      object dbed_serial_no: TDBEdit
+        Left = 96
+        Height = 33
+        Top = 76
+        Width = 120
+        DataField = 'tpoh_number'
+        DataSource = ds_poh
+        Font.Height = -18
+        MaxLength = 10
+        ParentFont = False
+        TabOrder = 2
+        OnKeyDown = ed_store_idKeyDown
+      end
+      object lbl_id_po: TLabel
+        Left = 224
+        Height = 25
+        Top = 77
+        Width = 86
+        Caption = 'Nomor PO'
+        Font.Height = -18
+        ParentColor = False
+        ParentFont = False
+      end
+      object dbed_po_id: TDBEdit
+        Left = 321
+        Height = 30
+        Top = 72
+        Width = 278
+        DataField = 'tpoh_bu_id'
+        DataSource = ds_poh
+        Alignment = taRightJustify
+        Font.Height = -18
+        Font.Name = 'Roboto'
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 3
+        OnKeyDown = ed_store_idKeyDown
+      end
+    end
+    object pnl_head_vendor: TPanel
+      Left = 607
+      Height = 136
+      Top = 0
+      Width = 904
+      Align = alClient
+      BevelOuter = bvNone
+      ClientHeight = 136
+      ClientWidth = 904
+      TabOrder = 1
+      object lbl_vendor_id: TLabel
+        Left = 20
+        Height = 22
+        Top = 30
+        Width = 102
+        Caption = 'Kode Vendor'
+        Font.Height = -18
+        Font.Name = 'Roboto'
+        ParentColor = False
+        ParentFont = False
+      end
+      object ed_vendor_name: TEdit
+        Left = 254
+        Height = 30
+        Top = 27
+        Width = 336
+        Font.Name = 'Roboto'
+        OnKeyDown = ed_store_idKeyDown
+        ParentFont = False
+        TabOrder = 1
+      end
+      object lbl_date_come: TLabel
+        Left = 600
+        Height = 25
+        Top = 35
+        Width = 96
+        Caption = 'Tanggal tiba'
+        ParentColor = False
+      end
+      object dbed_date_come: TDBEdit
+        Left = 750
+        Height = 30
+        Top = 27
+        Width = 140
+        DataField = 'tpoh_order_arrival_date'
+        DataSource = ds_poh
+        Font.Height = -18
+        Font.Name = 'Roboto'
+        MaxLength = 0
+        ParentFont = False
+        TabOrder = 2
+        OnKeyDown = ed_store_idKeyDown
+      end
+      object lbl_top: TLabel
+        Left = 600
+        Height = 25
+        Top = 78
+        Width = 134
+        Caption = 'Pembayaran TOP'
+        ParentColor = False
+      end
+      object dbed_top: TDBEdit
+        Left = 750
+        Height = 30
+        Top = 75
+        Width = 140
+        DataField = 'tpoh_top_id'
+        DataSource = ds_poh
+        Font.Height = -18
+        Font.Name = 'Roboto'
+        MaxLength = 1
+        ParentFont = False
+        TabOrder = 3
+        OnKeyDown = ed_store_idKeyDown
+      end
+      object dbed_sup_id: TDBEdit
+        Left = 130
+        Height = 30
+        Top = 27
+        Width = 108
+        DataField = 'tpoh_top_id'
+        DataSource = ds_poh
+        Font.Height = -18
+        Font.Name = 'Roboto'
+        MaxLength = 1
+        ParentFont = False
+        TabOrder = 0
+        OnKeyDown = ed_store_idKeyDown
+      end
+    end
+  end
+  object pnl_bottom: TPanel
+    Left = 0
+    Height = 40
+    Top = 855
+    Width = 1511
+    Align = alBottom
+    BevelOuter = bvNone
+    Caption = 'Panel Object Buttom'
+    ClientHeight = 40
+    ClientWidth = 1511
+    Color = 9062956
+    Font.Color = clWindow
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+    object lbl_dsstate: TLabel
+      Left = 39
+      Height = 25
+      Top = 4
+      Width = 83
+      Caption = 'lbl_dsstate'
+      ParentColor = False
+    end
+  end
+  object pnl_body: TPanel
+    Left = 0
+    Height = 572
+    Top = 176
+    Width = 1511
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 572
+    ClientWidth = 1511
+    TabOrder = 3
+    object dbg_pod: TRxDBGrid
+      Left = 0
+      Height = 572
+      Top = 0
+      Width = 1511
+      ColumnDefValues.BlobText = '(blob)'
+      TitleButtons = False
+      AutoSort = True
+      Columns = <      
+        item
+          Color = clDefault
+          Title.Alignment = taCenter
+          Title.Color = 9062956
+          Title.Font.Color = clWindow
+          Title.Font.Height = -18
+          Title.Font.Name = 'Roboto'
+          Title.Orientation = toHorizontal
+          Title.Caption = 'SKU'
+          FieldName = 'tpod_mp_sku'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Font.Height = -18
+          Font.Name = 'Roboto'
+          Title.Alignment = taCenter
+          Title.Color = 9062956
+          Title.Font.Color = clWindow
+          Title.Font.Height = -18
+          Title.Font.Name = 'Roboto'
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Barcode'
+          FieldName = 'tpod_mp_barcode'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          MaxSize = 100
+          Title.Alignment = taCenter
+          Title.Color = 9062956
+          Title.Font.Color = clWindow
+          Title.Font.Height = -18
+          Title.Font.Name = 'Roboto'
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Nama Barang'
+          FieldName = 'tpod_nama_barang'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footer.Value = 'TOTAL BELANJA'
+          Footers = <          
+            item
+              Value = 'TOTAL BELANJA'
+            end>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Color = 9062956
+          Title.Font.Color = clWindow
+          Title.Font.Height = -18
+          Title.Font.Name = 'Roboto'
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Qty'
+          FieldName = 'tpod_quantity'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Color = 9062956
+          Title.Font.Color = clWindow
+          Title.Font.Height = -18
+          Title.Font.Name = 'Roboto'
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Price'
+          FieldName = 'tpod_price'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Color = 9062956
+          Title.Font.Color = clWindow
+          Title.Font.Height = -18
+          Title.Font.Name = 'Roboto'
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Tax'
+          FieldName = 'tpod_tax_1'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Color = 9062956
+          Title.Font.Color = clWindow
+          Title.Font.Height = -18
+          Title.Font.Name = 'Roboto'
+          Title.Orientation = toHorizontal
+          Title.Caption = 'Total Price'
+          FieldName = 'tpod_total_price'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footer.Alignment = taRightJustify
+          Footer.FieldName = 'tpod_total_price'
+          Footer.ValueType = fvtSum
+          Footer.Font.Height = -24
+          Footer.Font.Name = 'Roboto'
+          Footer.Font.Style = [fsBold]
+          Footers = <>
+        end>
+      KeyStrokes = <      
+        item
+          Command = rxgcShowFindDlg
+          ShortCut = 16454
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowColumnsDlg
+          ShortCut = 16471
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowFilterDlg
+          ShortCut = 16468
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowSortDlg
+          ShortCut = 16467
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowQuickFilter
+          ShortCut = 16465
+          Enabled = True
+        end      
+        item
+          Command = rxgcHideQuickFilter
+          ShortCut = 16456
+          Enabled = True
+        end      
+        item
+          Command = rxgcSelectAll
+          ShortCut = 16449
+          Enabled = True
+        end      
+        item
+          Command = rxgcDeSelectAll
+          ShortCut = 16429
+          Enabled = True
+        end      
+        item
+          Command = rxgcInvertSelection
+          ShortCut = 16426
+          Enabled = True
+        end      
+        item
+          Command = rxgcOptimizeColumnsWidth
+          ShortCut = 16427
+          Enabled = True
+        end      
+        item
+          Command = rxgcCopyCellValue
+          ShortCut = 16451
+          Enabled = True
+        end>
+      FooterOptions.Active = True
+      FooterOptions.Color = clHighlight
+      FooterOptions.RowCount = 1
+      FooterOptions.DrawFullLine = False
+      SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+      SearchOptions.FromStart = False
+      OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgFooterRows, rdgAllowQuickFilter]
+      FooterColor = clHighlight
+      FooterRowCount = 1
+      Align = alClient
+      Color = clWindow
+      DrawFullLine = False
+      FocusColor = clRed
+      SelectedColor = clInfoBk
+      DataSource = ds_pod
+      DefaultRowHeight = 40
+      Font.Height = -18
+      Font.Name = 'Roboto'
+      Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      ParentFont = False
+      TabOrder = 0
+      TitleFont.Color = 9062956
+      TitleFont.Height = -18
+      TitleFont.Name = 'Roboto'
+    end
+  end
+  object pnl_disc: TPanel
+    Left = 0
+    Height = 107
+    Top = 748
+    Width = 1511
+    Align = alBottom
+    Caption = 'disc'
+    ClientHeight = 107
+    ClientWidth = 1511
+    TabOrder = 4
+    object Button1: TButton
+      Left = 1163
+      Height = 38
+      Top = 57
+      Width = 113
+      Caption = 'Button1'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+  end
+  object c_db: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Properties.Strings = (
+      'RawStringEncoding=DB_CP'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'laz'
+    User = 'root'
+    Password = 'password'
+    Protocol = 'mysql'
+    LibraryLocation = 'D:\APP\MYSQL\libmysql.dll'
+    Left = 944
+    Top = 444
+  end
+  object sds_poh: TZQuery
+    Connection = c_db
+    Active = True
+    SQL.Strings = (
+      'select * from tr_purchase_order_head'
+    )
+    Params = <>
+    Left = 704
+    Top = 472
+    object sds_pohtpoh_id: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpoh_id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object sds_pohtpoh_bu_id: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'tpoh_bu_id'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_pohtpoh_number: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpoh_number'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object sds_pohtpoh_supplier_id: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'tpoh_supplier_id'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_pohtpoh_order_date: TZDateField
+      FieldKind = fkData
+      FieldName = 'tpoh_order_date'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_pohtpoh_order_arrival_date: TZDateField
+      FieldKind = fkData
+      FieldName = 'tpoh_order_arrival_date'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_pohtpoh_top_id: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpoh_top_id'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object sds_pohtpoh_total_amount: TZBCDField
+      FieldKind = fkData
+      FieldName = 'tpoh_total_amount'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Precision = 10
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object sds_pohtpoh_status: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpoh_status'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+    object sds_pohtpoh_created_by: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpoh_created_by'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sds_pohtpoh_created_date: TZDateField
+      FieldKind = fkData
+      FieldName = 'tpoh_created_date'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_pohtpoh_updated_by: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpoh_updated_by'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sds_pohtpoh_updated_date: TZDateField
+      FieldKind = fkData
+      FieldName = 'tpoh_updated_date'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object sds_pod: TZQuery
+    OnCalcFields = sds_podCalcFields
+    Connection = c_db
+    OnNewRecord = sds_podNewRecord
+    Active = True
+    SQL.Strings = (
+      'select * from tr_purchase_order_details'
+    )
+    Params = <>
+    Left = 1100
+    Top = 480
+    object sds_podtpod_id: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpod_id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object sds_podtpod_tpoh_id: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpod_tpoh_id'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sds_podtpod_mp_sku: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'tpod_mp_sku'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_podtpod_mp_barcode: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'tpod_mp_barcode'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_podtpod_nama_barang: TStringField
+      DisplayLabel = 'Nama Barang'
+      DisplayWidth = 50
+      FieldKind = fkCalculated
+      FieldName = 'tpod_nama_barang'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object sds_podtpod_quantity: TZIntegerField
+      FieldKind = fkData
+      FieldName = 'tpod_quantity'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_podtpod_price: TZBCDField
+      FieldKind = fkData
+      FieldName = 'tpod_price'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Precision = 10
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object sds_podtpod_tax_1: TZBCDField
+      FieldKind = fkData
+      FieldName = 'tpod_tax_1'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Precision = 10
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object sds_podtpod_total_price: TZBCDField
+      FieldKind = fkData
+      FieldName = 'tpod_total_price'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Precision = 10
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+    object sds_podtpod_created_by: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpod_created_by'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sds_podtpod_created_date: TZDateField
+      FieldKind = fkData
+      FieldName = 'tpod_created_date'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_podtpod_updated_by: TZRawStringField
+      FieldKind = fkData
+      FieldName = 'tpod_updated_by'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object sds_podtpod_updated_date: TZDateField
+      FieldKind = fkData
+      FieldName = 'tpod_updated_date'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object sds_podtpod_tax_2: TZBCDField
+      FieldKind = fkData
+      FieldName = 'tpod_tax_2'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Precision = 10
+      Currency = False
+      MaxValue = 0
+      MinValue = 0
+      Size = 2
+    end
+  end
+  object ds_poh: TDataSource
+    DataSet = sds_poh
+    Left = 1048
+    Top = 524
+  end
+  object ds_pod: TDataSource
+    DataSet = sds_pod
+    Left = 1124
+    Top = 516
+  end
+end

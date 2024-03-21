@@ -1,0 +1,167 @@
+object frm_template: Tfrm_template
+  Left = 3130
+  Height = 895
+  Top = 38
+  Width = 1560
+  Caption = 'Frm Ver. 9.9'
+  ClientHeight = 895
+  ClientWidth = 1560
+  DesignTimePPI = 144
+  object pnl_top: TPanel
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 1560
+    Align = alTop
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    Caption = 'Panel Judul Forms'
+    Color = 16091980
+    ParentColor = False
+    TabOrder = 0
+  end
+  object pnl_head: TPanel
+    Left = 0
+    Height = 220
+    Top = 40
+    Width = 1560
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 1
+  end
+  object pnl_bottom: TPanel
+    Left = 0
+    Height = 40
+    Top = 855
+    Width = 1560
+    Align = alBottom
+    BevelOuter = bvNone
+    Caption = 'Panel Object Buttom'
+    Color = 16091980
+    ParentColor = False
+    TabOrder = 2
+  end
+  object pnl_body: TPanel
+    Left = 0
+    Height = 595
+    Top = 260
+    Width = 1560
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 595
+    ClientWidth = 1560
+    TabOrder = 3
+    object pnl_detail: TPanel
+      Left = 0
+      Height = 40
+      Top = 0
+      Width = 1560
+      Align = alTop
+      Alignment = taLeftJustify
+      Caption = 'Purchase order detail'
+      Color = 16091980
+      ParentColor = False
+      TabOrder = 0
+    end
+    object dbg_pod: TRxDBGrid
+      Left = 0
+      Height = 555
+      Top = 40
+      Width = 1560
+      ColumnDefValues.BlobText = '(blob)'
+      TitleButtons = False
+      AutoSort = True
+      KeyStrokes = <      
+        item
+          Command = rxgcShowFindDlg
+          ShortCut = 16454
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowColumnsDlg
+          ShortCut = 16471
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowFilterDlg
+          ShortCut = 16468
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowSortDlg
+          ShortCut = 16467
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowQuickFilter
+          ShortCut = 16465
+          Enabled = True
+        end      
+        item
+          Command = rxgcHideQuickFilter
+          ShortCut = 16456
+          Enabled = True
+        end      
+        item
+          Command = rxgcSelectAll
+          ShortCut = 16449
+          Enabled = True
+        end      
+        item
+          Command = rxgcDeSelectAll
+          ShortCut = 16429
+          Enabled = True
+        end      
+        item
+          Command = rxgcInvertSelection
+          ShortCut = 16426
+          Enabled = True
+        end      
+        item
+          Command = rxgcOptimizeColumnsWidth
+          ShortCut = 16427
+          Enabled = True
+        end      
+        item
+          Command = rxgcCopyCellValue
+          ShortCut = 16451
+          Enabled = True
+        end>
+      FooterOptions.DrawFullLine = False
+      SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+      SearchOptions.FromStart = False
+      OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+      Align = alClient
+      Color = clWindow
+      DrawFullLine = False
+      FocusColor = clRed
+      SelectedColor = clHighlight
+      Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      TabOrder = 1
+    end
+  end
+  object c_db: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Port = 0
+    Left = 53
+    Top = 88
+  end
+  object sds_poh: TZQuery
+    Params = <>
+    Left = 116
+    Top = 60
+  end
+  object sds_pod: TZQuery
+    Params = <>
+    Left = 188
+    Top = 64
+  end
+  object ds_poh: TDataSource
+    Left = 115
+    Top = 148
+  end
+  object ds_pod: TDataSource
+    Left = 188
+    Top = 156
+  end
+end

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="ppurchaseorder.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="159"/>
+      </Unit>
+      <Unit>
+        <Filename Value="upurchaseorder.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm_template"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="203"/>
+        <CursorPos Y="163"/>
+        <UsageCount Value="159"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\uconnect.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uConnect"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="15"/>
+        <CursorPos X="24" Y="6"/>
+        <UsageCount Value="99"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\setkoneksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="32"/>
+        <CursorPos X="22" Y="33"/>
+        <UsageCount Value="95"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\libdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="36" Y="13"/>
+        <UsageCount Value="79"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LOV\unlov.pas"/>
+        <ComponentName Value="FormLOV"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\ulov.pas"/>
+        <ComponentName Value="FrmLov"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ULov"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="87"/>
+        <CursorPos X="20" Y="252"/>
+        <UsageCount Value="31"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\MATERI BELAJAR\LAZARUS\MATERIAL\Jsonserial\samples\lazarus\configuration\src\dataset.serialize.samples.configuration.pas"/>
+        <ComponentName Value="FrmSamples"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="DataSet.Serialize.Samples.Configuration"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <UsageCount Value="36"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\lazarus\lcl\include\messagedialogs.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="208"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\LIB\libstring.pas"/>
+        <UnitName Value="Libstring"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="41"/>
+        <CursorPos Y="52"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\ccr\zeos\src\dbc\ZDbcMySql.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1216"/>
+        <CursorPos Y="1264"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\ccr\zeos\src\component\ZConnection.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="70"/>
+        <CursorPos X="34" Y="75"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\ccr\zeos\src\component\ZTransaction.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="303"/>
+        <CursorPos X="3" Y="316"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\ccr\zeos\src\component\ZAbstractConnection.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1126"/>
+        <CursorPos X="38" Y="1143"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\ccr\zeos\src\component\ZAbstractRODataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2057"/>
+        <CursorPos Y="2072"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\ccr\zeos\src\core\ZMessages.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1746"/>
+        <CursorPos X="19" Y="267"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\fpcsrc\packages\fcl-db\src\base\db.pas"/>
+        <UnitName Value="DB"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="122"/>
+        <CursorPos X="3" Y="81"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\ccr\zeos\src\core\ZExceptions.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="95"/>
+        <CursorPos X="27" Y="87"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\ccr\zeos\src\component\ZAbstractDataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="750"/>
+        <CursorPos Y="751"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="3" Y="509"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\fpcupdeluxe\lazarus\project\dev\fpcsrc\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="478"/>
+        <CursorPos X="4" Y="27"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="166" Column="26" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="116" Column="29" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="123" Column="29" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="3" Column="74"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="120" Column="3" TopLine="115"/>
+      </Position>
+      <Position>
+        <Filename Value="..\LIB\ulov.pas"/>
+        <Caret Line="50" Column="15" TopLine="49"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="118" Column="16" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="10" Column="29"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="13" Column="36" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="131" TopLine="118"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="142" Column="14" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="10" Column="47"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="139" Column="60" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="135" Column="66" TopLine="118"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="138" Column="62" TopLine="120"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="122" Column="3" TopLine="120"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="136" TopLine="116"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="135" TopLine="122"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="125" Column="14" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="130" Column="16" TopLine="119"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="133" Column="13" TopLine="118"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="137" Column="16" TopLine="137"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="159" Column="74" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="51" Column="24" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="63" Column="33" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="51" Column="24" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="57" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="51" Column="24" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="58" Column="26" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="upurchaseorder.pas"/>
+        <Caret Line="51" Column="24" TopLine="51"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

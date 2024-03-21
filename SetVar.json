@@ -1,0 +1,13 @@
+{
+    "host": "localhost",
+    "port": 3306,
+    "database": "hrms",
+    "username": "root",
+    "password": "password",
+	"protocol": "mysql",
+    "database1": "hrms",
+    "database2": "hrms",
+    "database3": "hrms",
+    "dirLiblx": "//usr//lib//x86_64-linux-gnu//libmariadb.so.3",
+    "dirLibwin": "D:\\APP\\MYSQL\\libmysql.dll" 
+}   

@@ -1,0 +1,20 @@
+object FormLOV: TFormLOV
+  Left = 3130
+  Height = 520
+  Top = 37
+  Width = 494
+  Caption = 'FormLOV'
+  ClientHeight = 520
+  ClientWidth = 494
+  DesignTimePPI = 144
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 520
+    Top = 0
+    Width = 494
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    TabOrder = 0
+  end
+end
